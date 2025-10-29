@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>토토맵 - 스포츠토토 판매점 찾기</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .header p {
+            font-size: 1.3em;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 50px 40px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            color: #667eea;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        .section p, .section ul {
+            font-size: 1.1em;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .section ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .section ul li {
+            padding: 10px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .section ul li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .download-section {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .download-section h2 {
+            color: white;
+            border: none;
+            margin-bottom: 20px;
+        }
+
+        .download-btn {
+            display: inline-block;
+            background: white;
+            color: #f5576c;
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+            margin: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .download-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .footer {
+            text-align: center;
+            padding: 30px;
+            background: #f8f9fa;
+            color: #666;
+        }
+
+        .footer a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 2em;
+            }
+
+            .header p {
+                font-size: 1.1em;
+            }
+
+            .content {
+                padding: 30px 20px;
+            }
+
+            .download-section {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🗺️ 토토맵</h1>
+            <p>전국 스포츠토토 판매점을 한눈에</p>
+        </div>
+
+        <div class="content">
+            <div class="section">
+                <h2>앱 소개</h2>
+                <p>
+                    토토맵은 전국의 스포츠토토 판매점을 쉽고 빠르게 찾을 수 있도록 도와주는 안드로이드 애플리케이션입니다.
+                    지도 기반 인터페이스로 현재 위치 주변의 판매점을 한눈에 확인할 수 있습니다.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>주요 기능</h2>
+                <ul>
+                    <li>네이버 지도 기반의 직관적인 판매점 위치 표시</li>
+                    <li>현재 위치 주변 판매점 자동 검색</li>
+                    <li>판매점 상세 정보 제공 (주소, 전화번호 등)</li>
+                    <li>판매점까지의 길찾기 기능</li>
+                    <li>즐겨찾기 기능으로 자주 방문하는 판매점 관리</li>
+                    <li>정기적인 판매점 정보 업데이트</li>
+                </ul>
+            </div>
+
+            <div class="download-section">
+                <h2>지금 다운로드하세요!</h2>
+                <a href="https://play.google.com/store/apps/details?id=com.yourpackage.totomap" class="download-btn">
+                    Google Play에서 다운로드
+                </a>
+            </div>
+
+            <div class="section">
+                <h2>개발자 정보</h2>
+                <p>
+                    토토맵은 사용자 편의성을 최우선으로 생각하며 지속적으로 개선되고 있습니다.
+                    문의사항이나 개선 제안이 있으시면 언제든 연락해 주세요.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>지원 및 문의</h2>
+                <p>
+                    앱 사용 중 문제가 발생하거나 궁금한 점이 있으시면 GitHub Issues를 통해 문의해 주세요.
+                </p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>
+                <a href="privacy_policy.html">개인정보 처리방침</a> |
+                <a href="https://github.com/kisungkim81/totomap-privacy">GitHub</a>
+            </p>
+            <p>&copy; 2025 토토맵. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
